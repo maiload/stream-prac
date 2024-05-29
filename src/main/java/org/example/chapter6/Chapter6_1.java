@@ -1,6 +1,4 @@
-package org.example;
-
-import org.example.model.User2;
+package org.example.chapter6;
 
 import java.util.Arrays;
 import java.util.HashSet;

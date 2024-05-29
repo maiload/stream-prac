@@ -1,4 +1,4 @@
-package org.example;
+package org.example.chapter6;
 
 import org.example.model.Order;
 import org.example.model.OrderLine;

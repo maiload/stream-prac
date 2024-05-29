@@ -1,6 +1,8 @@
 package org.example.model;
 
+import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Optional;
 
 public class User2 {
     private int id;
@@ -8,6 +10,16 @@ public class User2 {
     private String emailAddress;
     private boolean isVerified;
     private List<Integer> friendUserIds;
+    private LocalDateTime createdAt;
+
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
+
+    public User2 setCreatedAt(LocalDateTime createdAt) {
+        this.createdAt = createdAt;
+        return this;
+    }
 
     public int getId() {
         return id;
@@ -29,6 +41,9 @@ public class User2 {
 
     public String getEmailAddress() {
         return emailAddress;
+    }
+    public Optional<String> getEmailAddress2() {
+        return Optional.ofNullable(emailAddress);
     }
 
     public User2 setEmailAddress(String emailAddress) {
@@ -62,6 +77,7 @@ public class User2 {
                 ", emailAddress='" + emailAddress + '\'' +
                 ", isVerified=" + isVerified +
                 ", friendUserIds=" + friendUserIds +
+                ", createdAt=" + createdAt +
                 '}';
     }
 }
