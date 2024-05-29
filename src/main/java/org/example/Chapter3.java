@@ -8,12 +8,12 @@ import java.util.function.Function;
 
 public class Chapter3 {
     public static void main(String[] args) {
-        // 함수를 Object 의 형태로 나타내기
+        // 함수를 Object 의 형태로 나타내기 -> 함수를 변수에 담기 (일급 객체)
         Function<Integer, Integer> myAdder = new Adder();
         int result = myAdder.apply(5);
         System.out.println(result);
 
-        // 함수를 람다의 형식으로 나타내기
+        // 함수를 람다의 형식으로 변수에 담기
         Function<Integer, Integer> myAdder2 = (Integer x) -> { return x + 10; };
         int result2 = myAdder.apply(5);
         System.out.println(result2);
